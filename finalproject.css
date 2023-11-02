@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.body{ /*Turns the div class body into a flex component with uniformed placements*/
+    display: flex;
+    flex-direction: column;
+}
+.navbar{ 
+    /*Creates the navbar segment (position and top to position the navbar at the top of the page, turns the segment into a flex component,
+    creates uniformed spaces in between the contents, changes the color of the navbar, and sizes the navbar too*/
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: #191B50;
+    height: 7.5vh;
+    width: 100vw;
+    gap: 1em;
+}
+.logo img{ /*Positions the image on the navbar and fixes its sizing too*/
+    margin-top: 0.5vh;
+    margin-left: 3vh;
+    height: 6.5vh;
+    width: 6.5vh;
+}
+.navpages{ /*Positions the links on the end of the navbar*/
+    justify-content: flex-end;
+    margin-top: 1vh;
+}
+.navpages a{ 
+    /*Creates rounded borders around the buttons, gives the button a background color, and changes the font size and font color of the text
+    within the button*/
+    display: inline-block;
+    border: 1px solid #D5D5EB;
+    background-color: #D5D5EB;
+    border-radius: 12.5px;
+    font-size: 1rem;
+}
+.navpages ul a{ 
+    /*Fixes the format of the links within the buttons of the navbar (removes text decoration, changes the color, turns the texts into
+    uppercase, and changes the font*/
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 5px;
+    padding: 5px;
+}
+.navpages ul a:hover{ /*Changes the background color of the buttons in the navbar when hovered*/
+    background-color: #686bb4;
+}
+/*All of the following CSS are for the dropdown bar located in the navbar. Positions the dropdown bar and makes it viable to use*/
+.navpages ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+.container{ 
+    /*Shapes the minimum size for the portion in between the navbar and footer (Applies for the Home and Study Background page). 
+    Also gives that segment a background color*/
+    background-color: #FDEFE6;
+    height: 100vh;
+    width: 100vw;
+}
+.discussion{ 
+    /*Shapes the portion in between the navbar and footer for the discussion page. Also gives that segment a background color*/
+    background-color: #FDEFE6;
+    width: 100vw;
+    height: 250vh;
+}
+.conclusion{ 
+    /*Shapes the portion in between the navbar and footer for the conclusion page. Also gives that segment a background color*/
+    background-color: #FDEFE6;
+    width: 100vw;
+    height: 210vh;
+}
+.references{ 
+    /*Shapes the portion in between the navbar and footer for the reference page. Also gives that segment a background color*/
+    background-color: #FDEFE6;
+    width: 100vw;
+    height: 190vh;
+}
+.mainpage{ /*turns the div mainpage into an inline-block*/
+    display: inline-block;
+}
+.mainpageimg img{ /*Changes the shape of the image within the div and positions it*/
+    margin-top: 12vh;
+    margin-left: 1vw;
+    width: 45vw;
+}
+.mainpagetext{ /*Chsnges the font-size of the text and positions it*/
+    position: fixed;
+    top: 22%;
+    margin-left: 50vw;
+    margin-right: 20vw;
+    font-size: x-large;
+}
+.mainpagetext span{ /*Changes the font-weight, font-family, and font-size of the text within the span*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.mainpagetext p{ /*Changes the font-family of the text within the p category of the div*/
+    font-family: 'Didact Gothic', sans-serif;
+}
+.containertxt h1{ /*Positions the text and changes its font-family*/
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10vh;
+    margin-left: 15vh;
+}
+.containertxt p{ 
+    /*Creates indentation in the text, while changing the font-family of the text and positioning it on
+    on the page*/
+    font-family: 'Didact Gothic', sans-serif;
+    margin-top: 2vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    font-size: 1.25em;
+    text-indent: 20px
+}
+.datatitletxt h1{ /*Changes the font-family of the text and positions it*/
+    font-family: 'Poppins', sans-serif;
+    margin-top: 8vh;
+    margin-left: 2.5vw;
+}
+/*The following CSS position and size the images for the ff. pages:
+Histograms and FDTs
+Bar Graphs and Pie Charts
+Descriptive Statistics and Relative Frequency
+Box and Whisker Plot*/
+.histograms img{
+    position: absolute;
+}
+.histogramimg1 img{
+    top: 20%;
+    left: 1.5%;
+    height: 30vh;
+    width: 55vw;
+}
+.histogramimg2 img{ 
+    top: 59%;
+    left: 1.5%;
+    height: 30vh;
+    width: 55vw;
+}
+.fdtimg1 img{
+    width: 40vw;
+    height: 40vh;
+    margin-left: 58vw;
+}
+.fdtimg2 img{ 
+    width: 40vw;
+    height: 40vh;
+    margin-left: 58vw;
+    margin-top: 1vh;
+}
+.bargraphs img{
+    position: absolute;
+}
+.bargraphimg1 img{
+    top: 17%;
+    left: 2.5%;
+    height: 32.4vh;
+}
+.bargraphimg2 img{
+    top: 56%;
+    left: 2.5%;
+    height: 30vh;
+}
+.piechartimg1 img{
+    margin-left: 68vw;
+    width: 31vw;
+}
+.piechartimg2 img{
+    margin-left: 68vw;
+    margin-top: 1vh;
+    width: 31vw;
+}
+.descriptivestatimg img{ 
+    position: absolute;
+    height: 36vh;
+    width: 25vw;
+}
+.descriptivestatimg1 img{
+    left: 10%;
+}
+.descriptivestatimg2 img{ 
+    left: 10%;
+    top: 50%;
+}
+.relativefreimg img{
+    height: 30vh;
+    width: 40vw;
+}
+.relativefreimg1 img{ 
+    margin-left: 50vw;
+    margin-top: 3vh;
+}
+.relativefreimg2 img{ 
+    margin-left: 50vw;
+    margin-top: 6vh;
+}
+.boxandwhisplot img{
+    margin-top: 2vh;
+    height: 55vh;
+    width: 45vw;
+}
+.boxandwhisplotimg1 img{ 
+    position: absolute;
+    left: 2.5%;
+}
+.boxandwhisplotimg2 img{
+    margin-left: 52vw;
+}
+.discussiontxt h1{ /*Changes the font-family of the text and positions it on the page*/
+    font-family: 'Poppins', sans-serif;
+    margin-top: 9vh;
+    margin-left: 15vw;
+    margin-bottom: 1vh;
+}
+.discussiontxt p{ /*Changes the font-family and font-size of the text. Creates an indention and positions it on the screen)*/
+    font-family: 'Didact Gothic', sans-serif;
+    margin-top: 1vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    font-size: 1em;
+    text-indent: 20px
+}
+.referencetxt{ /*Creates margins on the left and right side of the text*/
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+.referencetxt h1{ /*Centers the text, positions the text, and changes it font*/
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 3vh;
+    margin-top: 10vh;
+}
+.referencetxt a{ /*Changes the font, size, color of the links within the referencetxt div*/
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+    font-family: 'Didact Gothic', sans-serif;
+}
+.aboutmeimg{ /*Positions the image*/
+    margin-top: 9vh;
+    margin-left: 10vw;
+}
+.aboutmeimg img{ /*Changes the width of the img inside the aboutme div*/
+    width: 25vw;
+}
+.name{ 
+    /*Turns the components within div class name into an inline-block, creates a rectangle around the text, then positions it on
+    the page, also aligns the text in the center and changes the font-size and font-family*/
+    display: inline-block;
+    margin-top: 2vh;
+    margin-left: 10vw;
+    border: 3px solid black;
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.5em;
+    background-color: rgb(255, 255, 255);
+}
+.details{ /*To position the components within the div class details and to change the font of the text with the said div*/
+    position: absolute;
+    top: 14%;
+    left: 45%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.details span{ /*To turn the text within span into bold*/
+    font-weight: bold;
+}
+.details hr{ /*To control the length of the horizontal line that goes in between each of the portions of the div class details*/
+    width: 50vw;
+}
+.bulletlist{ /*To position the text in the div class bulletlist*/
+    margin-left: 5vw;
+    margin-right: 20vw;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+.bulletlist p{ /*To change the font-size of the p text in the div class bulletlist*/
+    font-size: 1.25em;
+}
+.footer{ 
+    /*This portion of the css is to create the footer segment (border is to outline the segment; width and height to size 
+    the segment; background-color to change the color; position: fixed and bottom is for the permanent placement of the
+    footer on the screen)*/
+    position: fixed;
+    bottom: 0;
+    border: 1px solid black;
+    background-color: #191B50;
+    width: 100vw;
+    height: 5vh;
+}
+.copyright{
+    /*This portion of the css is for the copyright text within the foot. It creates a gap between the upper border 
+    of the footer and the top half of the text (margin-top). Also turns the copyright text into an inline block (display), 
+    changes the color of the text (color), and the font of the text (font-family)*/
+    margin-top: 1vh;
+    display: inline-block;
+    color: #D5D5EB;
+    font-family: 'Didact Gothic', sans-serif;
+}
+.sublinks{ /*positions the sublinka on the footer*/
+    float: right;
+    margin-top: 1vh;
+}
+.sublink{ /*This makes the sublinks inline-blocks*/
+    display: inline-block;
+}
+.sublinks img{ /*This portion of the css is used to change the color of the sublink images (filter) and the size of the image (height)*/
+    filter: invert(74%) sepia(7%) saturate(1891%) hue-rotate(331deg) brightness(105%) contrast(89%);
+    height: 3.5vh;
+}
+.sublinks a{ /*This portion of the css is used to create gaps in between the sublink images using margins*/
+    margin-left: 10px;
+}
