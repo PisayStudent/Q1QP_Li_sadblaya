@@ -81,19 +81,19 @@ ul li:hover ul.dropdown{
 .discussion{ 
     /*Shapes the portion in between the navbar and footer for the discussion page. Also gives that segment a background color*/
     background-color: #FDEFE6;
-    width: 100vw;
+    width: 99.5vw;
     height: 250vh;
 }
 .conclusion{ 
     /*Shapes the portion in between the navbar and footer for the conclusion page. Also gives that segment a background color*/
     background-color: #FDEFE6;
-    width: 100vw;
+    width: 99.5vw;
     height: 210vh;
 }
 .references{ 
     /*Shapes the portion in between the navbar and footer for the reference page. Also gives that segment a background color*/
     background-color: #FDEFE6;
-    width: 100vw;
+    width: 99.5vw;
     height: 190vh;
 }
 .mainpage{ /*turns the div mainpage into an inline-block*/
